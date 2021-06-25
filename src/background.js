@@ -12,3 +12,12 @@ chrome.omnibox.onInputEntered.addListener((text) => {
     chrome.tabs.update(tab.id, { url });
   });
 });
+
+chrome.omnibox.onInputChanged.addListener((text, suggest) => {
+  suggest([
+    {
+      content: '[ search ]   [ name/ ]   [ name/repository ]',
+      description: '[ search ]   [ name/ ]   [ name/repository ]',
+    },
+  ]);
+});
