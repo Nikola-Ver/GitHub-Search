@@ -1,0 +1,22 @@
+{
+  "name": "GitHub Search",
+  "manifest_version": 2,
+  "version": "1.0",
+  "omnibox": {
+    "keyword": "gh"
+  },
+  "icons": {
+    "16": "./src/icon.png",
+    "48": "./src/icon.png",
+    "128": "./src/icon.png"
+  },
+  "web_accessible_resources": [
+    "./src/icon.png"
+  ],
+  "background": {
+    "persistent": false,
+    "scripts": [
+      "./src/background.js"
+    ]
+  }
+}
